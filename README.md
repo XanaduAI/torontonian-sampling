@@ -61,7 +61,7 @@ Brajesh Gupt.
 
 If you are doing any research using this source code and Strawberry Fields, please cite the following two papers:
 
-> Brajesh Gupt, Nicolas Quesada, Juan Miguel Arrazola, Thomas R. Bromley, and Nathan Killoran.  Insert paper title here. arXiv, 2018. [arXiv:1809.04680](https://arxiv.org/abs/1809.04680)
+> Brajesh Gupt, Juan Miguel Arrazola, Nicolas Quesada, Thomas R. Bromley, and Nathan Killoran.  Insert paper title here. arXiv, 2018. [arXiv:1809.04680](https://arxiv.org/abs/1809.04680)
 
 > Nathan Killoran, Josh Izaac, Nicolás Quesada, Ville Bergholm, Matthew Amy, and Christian Weedbrook. Strawberry Fields: A Software Platform for Photonic Quantum Computing. arXiv, 2018. [arXiv:1804.03159](https://arxiv.org/abs/1804.03159)
 
