@@ -23,11 +23,6 @@ from numpy.distutils.extension import Extension
 
 version = 0.1
 
-requirements = [
-    "strawberryfields>=0.8.0",
-]
-
-
 extensions = [Extension("torontonian_samples",
     sources=['src/kinds.f90', 'src/structures.f90', 'src/vars.f90', 'src/torontonian_samples.f90'],
     extra_compile_args=["-std=c99 -O3 -Wall -fPIC -shared -fopenmp"],
@@ -46,7 +41,6 @@ info = {
     'description': 'Open source Python package for Torontonian sampling',
     'long_description': open('README.md').read(),
     'provides': ["torontonian_samples"],
-    'install_requires': requirements,
     'ext_modules': extensions,
     # 'cmdclass': {'build_ext': build_ext},
     'command_options': {

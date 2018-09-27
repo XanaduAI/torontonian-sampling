@@ -29,10 +29,13 @@ examples: fortran
 
 fortran:
 	$(MAKE) -C src
+	mkdir -p include
+	mv src/*.o include/
+	mv src/*.mod include/
 
 .PHONY: clean
 
 clean:
-	rm -rf *.so *.dll build
+	rm -rf *.so *.dll build bin
 	$(MAKE) -C src clean
 	$(MAKE) -C examples clean

@@ -1,5 +1,6 @@
 program main
     use torontonian_samples
+    use kinds
 
     implicit none
 

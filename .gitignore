@@ -1,3 +1,6 @@
 .ipynb_checkpoints/*
 build/*
 *.so
+include/*
+examples/*.o
+src/a.out

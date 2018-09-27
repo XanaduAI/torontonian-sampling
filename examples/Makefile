@@ -19,14 +19,14 @@ FCFLAGS =
 # link flags
 LDFLAGS = -fopenmp
 # include
-INCLUDE = ../src
+INCLUDE = ../include
 
 # Program name
 PROG = fortran_example
 # source files
 SRC = $(PROG).f90
 # object files
-OBJ = $(SRC:.f90=.o) ../src/*.o
+OBJ = $(SRC:.f90=.o) $(INCLUDE)/*.o
 
 all: $(PROG)
 
@@ -36,7 +36,7 @@ $(PROG): $(OBJ)
 %.o: %.f90
 	$(FC) $(FCFLAGS) -c $< -I$(INCLUDE)
 
-.PHONY: clean veryclean
+.PHONY: clean
 
 clean:
 	rm -f *.o $(PROG)
