@@ -12,27 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PYTHON=python3
+# compiler
+FC := gfortran
+# compile flags
+FCFLAGS = -fdefault-real-8 -fbacktrace -fno-align-commons -fbounds-check -fPIC
+# link flags
+LDFLAGS = -fopenmp -shared
+# source files
+SRC = kinds.f90 structures.f90 vars.f90 torontonian_samples.f90
+# object files
+OBJ = $(SRC:.f90=.o)
 
-all: python
+all: modules
 
-python: torontonian_samples.cpython-*
+modules: $(OBJ)
+	$(FC) $(FCFLAGS) $^ $(LDFLAGS)
 
-torontonian_samples.cpython-*:
-	mkdir -p torontonian_samples
-	$(PYTHON) setup.py build
-	cp build/lib*/torontonian_samples.cpython-* .
-	rm -r torontonian_samples
-
-examples: fortran
-	$(MAKE) -C examples
-
-fortran:
-	$(MAKE) -C src
+%.o: %.f90
+	$(FC) $(FCFLAGS) -c $<
 
 .PHONY: clean
 
 clean:
-	rm -rf *.so *.dll build
-	$(MAKE) -C src clean
-	$(MAKE) -C examples clean
+	rm -f *.o *.mod *.MOD
