@@ -19,7 +19,11 @@ The Torontonian sampling Fortran module can be used either via Fortran, or via t
 
 ### Interfacing via Fortran
 
-If using the module via Fortran, no external dependencies are required. Simply run
+If using the module via Fortran, no external dependencies are required, just a Fortran compiler like `gfortran`. On Ubuntu based systems, this can be installed via apt:
+```bash
+sudo apt install gfortran
+```
+Then, simply run
 ```bash
 make fortran
 ```
@@ -32,7 +36,8 @@ See the file `examples/fortran_example.f90` for an example program that uses the
 
 ### Interfacing via Python
 
-To compile the module for use with Python, `NumPy` is required to be installed. This can be installed via `pip`L
+To compile the module for use with Python, `NumPy` is required to be installed, as well as a Fortran compiler such as `gfortran`.
+`NumPy` can be installed via `pip`:
 ```bash
 pip install numpy
 ```
@@ -42,19 +47,6 @@ make python
 ```
 in the top level directory to compile the Python module. The module `torontonian_samples.cpython-*-.so` will be created, which can then be imported in Python via `import torontonian_samples`.
 
-Fortran code wrapped into python to generate samples from Torontonian.
-
-Requirements:
-1. Python wrapper for fortran programs "f2py" should be installed on your computer.
-2. Standard GNU libraries which come with any Linux distribution.
-3. Strawberry Fields software to generate covariance matrices for the Gaussian states. You may need to upgrade SF in order
-    to use some of the function not available in the standard installation. Run the following command:
-
-            pip3 install https://github.com/XanaduAI/strawberryfields/archive/master.zip --upgrade
-
-This should be enough for the module to be called from Python.
-
-Take a look at the TorontonianSampling.ipynb for an example.
 ## Authors
 
 Brajesh Gupt.
