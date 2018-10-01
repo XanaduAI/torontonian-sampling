@@ -1,9 +1,6 @@
 # Torontonian Sampling
 
-### Using samples from the Torontonian to ...
-
-
-This repository contains the source code used to produce the results presented in *"insert paper title here"* [arXiv:1809.04680](https://arxiv.org/abs/1809.04680).
+This repository contains the source code used to produce the results presented in *"Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer"* [placeholder for arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXX.XXXX).
 
 ## Contents
 
@@ -51,11 +48,9 @@ in the top level directory to compile the Python module. The module `torontonian
 
 Brajesh Gupt.
 
-If you are doing any research using this source code and Strawberry Fields, please cite the following two papers:
+If you are doing any research using this source code, please cite the following paper:
 
-> Brajesh Gupt, Juan Miguel Arrazola, Nicolas Quesada, Thomas R. Bromley, and Nathan Killoran.  Insert paper title here. arXiv, 2018. [arXiv:1809.04680](https://arxiv.org/abs/1809.04680)
-
-> Nathan Killoran, Josh Izaac, Nicolás Quesada, Ville Bergholm, Matthew Amy, and Christian Weedbrook. Strawberry Fields: A Software Platform for Photonic Quantum Computing. arXiv, 2018. [arXiv:1804.03159](https://arxiv.org/abs/1804.03159)
+> Brajesh Gupt, Juan Miguel Arrazola, Nicolas Quesada, and Thomas R. Bromley.  Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer. arXiv, 2018. [placeholder for arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
 
 ## License
 
