@@ -1,6 +1,6 @@
 # Torontonian Sampling
 
-This repository contains the source code used to produce the results presented in *"Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer"* [placeholder for arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXX.XXXX).
+This repository contains the source code used to produce the results presented in *"Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer"* [arXiv:1810.00900](https://arxiv.org/abs/1810.00900).
 
 ## Contents
 
@@ -50,7 +50,7 @@ Brajesh Gupt.
 
 If you are doing any research using this source code, please cite the following paper:
 
-> Brajesh Gupt, Juan Miguel Arrazola, Nicolas Quesada, and Thomas R. Bromley.  Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer. arXiv, 2018. [placeholder for arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+> Brajesh Gupt, Juan Miguel Arrazola, Nicolas Quesada, and Thomas R. Bromley.  Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer, [arXiv:1810.00900](https://arxiv.org/abs/1810.00900)
 
 ## License
 
