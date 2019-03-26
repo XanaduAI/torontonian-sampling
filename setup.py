@@ -25,7 +25,7 @@ version = 0.1
 
 extensions = [Extension("torontonian_samples",
     sources=['src/kinds.f90', 'src/structures.f90', 'src/vars.f90', 'src/torontonian_samples.f90'],
-    extra_compile_args=["-std=c99 -O3 -Wall -fPIC -shared -fopenmp"],
+    extra_f90_compile_args=["-fdefault-real-8",'-fbacktrace','-fno-align-commons','-fbounds-check',"-fPIC"],
     extra_link_args=['-fopenmp'])]
 
 info = {
